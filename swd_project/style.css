@@ -1,0 +1,243 @@
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Variable Declaration */
+:root {
+    --light-green: rgb(134, 204, 94);
+    --white-alt: #f1f1f1;
+    --black-alt: #252525;
+    --dark-gray: #5a5a5a;
+    --light-gray: #afafaf;
+}
+
+.btn {
+    min-width: 100px;
+    min-height: 40px;
+    padding: 0.4em 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transition: all 200ms ease-in-out 0s;
+}
+
+.btn-fill {
+    background-color: var(--black-alt);
+    color: #fff;
+    border: #252525 solid 2px;
+}
+
+.btn-fill:hover {
+    background-color: var(--white-alt);
+    color: var(--black-alt);
+    border: #252525 solid 2px;
+}
+
+.btn-hollow {
+    background-color: #fff;
+    color: var(--black-alt);
+    border: #252525 solid 2px;
+}
+
+.btn-hollow:hover {
+    background-color: var(--black-alt);
+    color: #fff;
+    border: #252525 solid 2px;
+}
+
+.text-low {
+    color: var(--light-gray);
+    opacity: 80%;
+}
+
+.sechead {
+    font-size: 70px;
+    margin: 0 2em;
+}
+
+.body {
+    font-size: 28px;
+    margin: .2em 0;
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--white-alt);
+    font-family: "Poppins", sans-serif;
+}
+
+
+nav {
+    background-color: #ffffff;
+    border: 2px black;
+    border-bottom: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    margin: 0 5rem;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: rgb(129, 129, 129);
+    color: var(--black-alt);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+nav p {
+    color: var(--green-pop);
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+}
+
+/* Sections Formatting */
+
+
+#hero {
+    flex-wrap: wrap-reverse;
+    /* background-color: #fff; */
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#name {
+    margin: auto;
+}
+
+#detail {
+    background-color: #000;
+    color: var(--white-alt);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 12em;
+    min-height: max-content;
+}
+
+#hobbies {
+    margin: 10em 0em;
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
+#hobbies>.sechead {
+    text-align: center;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 1em;
+    border-radius: 10px;
+    border: var(--black-alt) dashed 2px;
+}
+
+.item:hover {
+    rotate: 2deg;
+    scale: 1.2;
+    transition: all 200ms ease-out;
+}
+
+.item>.sechead {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.item>.logo {
+    font-size: 140px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+#contact>form {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    border: var(--black-alt) solid 4px;
+    border-radius: 10px;
+    padding: 2rem 10rem;
+}
+
+#contact>form>input {
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: var(--black-alt);
+    color: var(--white-alt);
+    text-align: center;
+}
+
+#contact>form>textarea {
+    font-size: 28px;
+    background-color: var(--black-alt);
+    color: var(--white-alt);
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    min-height: 120px;
+}
+
+footer img {
+    width: 40px;
+}
